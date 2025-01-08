@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add info</title>
+</head>
+<body>
+<form method="post">
+  {% csrf_token %}
+  <label for="firstname">Vase krstne meno:</label>
+  <input type="text" name="firstname" id="firstname" required>
+   <br>
+  <label for="lastname">Vase priezvisko:</label>
+  <input type="text" name="lastname" id="lastname" required>
+  <br>
+  <label for="email">Email:</label>
+  <input type="text" name="email" id="email" required>
+  <br>
+  <label for="phone">Telefon:</label>
+  <input type="text" name="phone" id="phone" required>
+  <br>
+    <label for="address">Adresa:</label>
+  <input type="text" name="address" id="address" required>
+    <br>
+  <button type="submit">Submit</button>
+</form>
+
+{% if submit %}
+  <p>Your first name is: {{ firstname }}</p>
+{% endif %}
+</body>
+</html>
