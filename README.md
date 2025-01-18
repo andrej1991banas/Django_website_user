@@ -1,5 +1,7 @@
 # Django_website_user
 
+#using Postgres database on server
+
 #real app with login and registry of the user, getting new info from the user and upload to the database
 #created models with custom user and auth via username as email, models: members, gym, trainer, manager, trainingsession with fereign keys
 
